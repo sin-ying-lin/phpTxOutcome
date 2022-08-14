@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<PTSD_current &le; 0.5<br/>gini = 0.5<br/>samples = 730<br/>value = [365, 365]<br/>class = 0>, fillcolor="#ffffff"] ;
+1 [label=<BPD_current &le; 0.5<br/>gini = 0.339<br/>samples = 134<br/>value = [29, 105]<br/>class = 1>, fillcolor="#70b8ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.168<br/>samples = 54<br/>value = [5, 49]<br/>class = 1>, fillcolor="#4da7e8"] ;
+1 -> 2 ;
+3 [label=<gini = 0.42<br/>samples = 80<br/>value = [24, 56]<br/>class = 1>, fillcolor="#8ec7f0"] ;
+1 -> 3 ;
+4 [label=<BPD_current &le; 0.5<br/>gini = 0.492<br/>samples = 596<br/>value = [336, 260]<br/>class = 0>, fillcolor="#f9e2d2"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.434<br/>samples = 88<br/>value = [28, 60]<br/>class = 1>, fillcolor="#95cbf1"] ;
+4 -> 5 ;
+6 [label=<gini = 0.477<br/>samples = 508<br/>value = [308, 200]<br/>class = 0>, fillcolor="#f6d3ba"] ;
+4 -> 6 ;
+}
